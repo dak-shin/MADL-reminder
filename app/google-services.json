@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "921559949226",
+    "project_id": "reminder-cedfd",
+    "storage_bucket": "reminder-cedfd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921559949226:android:9b3b3ac42ffdd4f77ad5d3",
+        "android_client_info": {
+          "package_name": "com.example.madl_reminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921559949226-2k5r2o4euntltce7clohugke7ppmo2ch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW95QQ5z7DHdy12OErgXcjEORYqAcuGf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921559949226-2k5r2o4euntltce7clohugke7ppmo2ch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

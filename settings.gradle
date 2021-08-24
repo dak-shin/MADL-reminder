@@ -1,0 +1,2 @@
+rootProject.name = "MADL-reminder"
+include ':app'

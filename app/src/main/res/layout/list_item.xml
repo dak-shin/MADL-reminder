@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/each_task"
+    android:weightSum="10"
+    android:padding="10dp"
+    >
+
+
+        <TextView
+            android:id="@+id/task_name"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:paddingVertical="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:scrollHorizontally="false"
+
+            android:text="Supp"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/remove_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:lines="1"
+            android:text="REMOVE"
+
+            android:onClick="DeleteTaskWithBtn"/>
+
+
+</LinearLayout>
+

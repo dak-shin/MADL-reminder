@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/bg"
+    >
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@color/bg"
+        >
+
+        <EditText
+            android:id="@+id/task"
+            android:textColor="@color/font_color"
+            android:inputType="textCapSentences"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter the task"/>
+
+        <RadioGroup
+            android:id="@+id/priority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:textColor="@color/font_color"
+                android:id="@+id/high"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High" />
+            <RadioButton
+                android:textColor="@color/font_color"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:id="@+id/medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium" />
+            <RadioButton
+                android:textColor="@color/font_color"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:id="@+id/low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Low" />
+        </RadioGroup>
+
+        <Button
+            android:layout_margin="10dp"
+            android:onClick="handleTask"
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD Task"
+            />
+
+    </LinearLayout>
+
+        <ListView
+            android:layout_weight="7"
+            android:background="@color/bg"
+            android:layout_gravity="start"
+            android:id="@+id/taskList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+
+
+
+</LinearLayout>
